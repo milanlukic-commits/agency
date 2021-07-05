@@ -9,9 +9,37 @@
     --bodyFont: 'Roboto',  sans-serif;
     --headings: 'Ubuntu', sans-serif;
 }
+
+/* basic styles */
 body {
     font-family: var(--bodyFont);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--headings);
+}
+
+/* nav */
+.navbar {
+    border-top: 6px solid var(--orange);
+    background: var(--black);
+    padding: 0;
+}
+.navbar-brand {
+    background: var(--orange);
+    padding: 15px 40px;
+    font-style: italic;
+    color: var(--white);
+    font-size: 1.7rem;
+    transition: var(--transition);
+}
+.navbar-brand:hover {
+    color: var(--black);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    margin: 0 10px;
+}
+.navbar .nav-link:hover {
+    color: var(--moka);
 }

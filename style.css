@@ -287,3 +287,55 @@ h1, h2, h3, h4, h5, h6 {
 #skills .single-progress {
     margin-bottom: 15px;
 }
+
+/* pricing */
+#pricing .card {
+    border-radius: 0;
+}
+#pricing .card-title {
+    padding-top: 20px;
+}
+#pricing .priceNum {
+    position: relative;
+    background: var(--moka);
+    padding: 10px 0;
+}
+#pricing .money {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+}
+.moneyNum {
+    font-size: 60px;
+}
+.moneyEnd {
+    font-size: 20px;
+}
+#pricing .list-group-item {
+    font-size: 12px;
+}
+#pricing .pricingBtn {
+    background: var(--orange);
+    border-radius: 0;
+    transition: var(--transition);
+}
+#pricing .pricingBtn:hover {
+    color: var(--white);
+    background: var(--black);
+}
+#pricing .col-lg-3:last-child .priceNum {
+    background: var(--orange);
+}
+#pricing .list-group li:first-child {
+    padding-top: 30px;
+    border-top: none;
+}
+#pricing .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#pricing .list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

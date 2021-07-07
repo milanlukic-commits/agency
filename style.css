@@ -187,3 +187,103 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0, 0, 0, .5);
 }
 
+/* about */
+#about {
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    padding: 100px 0 200px 0;
+}
+#about img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#about .card-header {
+    background: var(--orange);
+}
+#about .btn-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#about .btn-link:hover {
+    color: var(--white);
+}
+#about .card {
+    border: 1px solid var(--black);
+}
+
+/* projects */
+#projects .col-lg-3 {
+    padding: 0;
+}
+#projects .imgContainer {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    position: relative;
+    overflow: hidden;
+}
+#projects .imgContainer img:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+#projects .imgIcons {
+    position: absolute;
+    bottom: -10rem;
+    padding: 30px 0;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    transition: bottom 1.5s;
+}
+#projects .imgContainer:hover .imgIcons {
+    bottom: 0;
+}
+#projects i {
+    color: var(--orange);
+    font-size: 35px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+#projects i:hover {
+    color: var(--black);
+}
+
+/* people */
+#people img {
+    width: 80%;
+    margin: -100px auto 0 auto;
+    border-radius: 50%;
+}
+#people .row:nth-child(2) {
+    margin-top: 150px;
+}
+#people hr {
+    background: var(--orange);
+}
+#people i {
+    color: var(--orange);
+    font-size: 30px;
+    transition: var(--transition);
+}
+#people i:hover {
+    color: var(--gray);
+}
+
+/* skills */
+#skills {
+    background-image: linear-gradient(rgb(255, 138, 91, .8), rgb(255, 138, 91, .8)), url(img/progress.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    padding: 150px 0;
+}
+#skills .progress {
+    height: 3px;
+}
+#skills .progress-bar {
+    background: var(--black);
+}
+#skills .single-progress {
+    margin-bottom: 15px;
+}

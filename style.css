@@ -177,6 +177,9 @@ h1, h2, h3, h4, h5, h6 {
 ::placeholder {
     color: var(--moka);
 }
+#contact input:focus {
+    outline: none;
+}
 
 /* team */
 #team .row {

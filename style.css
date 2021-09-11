@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500%7CUbuntu:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,700&display=swap');
 :root {
     --white: #fff;
     --orange: rgb(255, 138, 91);
@@ -9,8 +9,9 @@
     --bodyFont: 'Roboto',  sans-serif;
     --headings: 'Ubuntu', sans-serif;
 }
-
-/* basic styles */
+/***************
+basic styles
+***************/
 html {
     scroll-behavior: smooth;
 }
@@ -28,8 +29,9 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-size: 2.5rem;
 }
-
-/* nav */
+/***************
+ nav 
+***************/
 .navbar {
     border-top: 6px solid var(--orange);
     background: var(--black);
@@ -54,16 +56,17 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-link:hover {
     color: var(--moka);
 }
-
-/* banner */
-#banner {
+/***************
+baner
+***************/
+#baner {
     background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.99)), url(img/banner.jpg);
     height: 80vh;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-#banner::after {
+#baner::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -74,14 +77,14 @@ h1, h2, h3, h4, h5, h6 {
     transform: skewY(7deg);
     transform-origin: left bottom;
 }
-#banner .row {
+#baner .row {
     height: 80vh;
 }
-#banner h2 {
+#baner h2 {
     color: var(--orange);
     margin-bottom: 30px;
 }
-#banner .btnLink {
+#baner .btnLink {
     text-decoration: none;
     font-size: 20px;
     padding: 15px 25px;
@@ -89,16 +92,16 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     cursor: pointer;
     text-transform: uppercase;
-    transition: var(--transition);
     color: var(--white);
     border-radius: 0;
 }
-#banner .btnLink:hover {
+#baner .btnLink:hover {
     background: var(--orange);
     color: var(--black);
 }
-
-/* bannerIcons */
+/***************
+bannerIcons
+***************/
 #bannerIcons {
     margin-top: -100px;
 }
@@ -115,8 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 #bannerIcons i:hover {
     color: var(--black);
 }
-
-/* services */
+/***************
+services
+***************/
 #services i {
     background: var(--orange);
     padding: 50px;
@@ -124,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
     transition: var(--transition);
 }
-#services i:hover{
+#services i:hover {
     color: var(--orange);
     background: var(--black);
 }
@@ -140,10 +144,11 @@ h1, h2, h3, h4, h5, h6 {
 #services .fa-js {
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
-
-/* contact */
+/***************
+contact
+***************/
 #contact {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(img/contact.jpg);
+    background-image:linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(img/contact.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -157,8 +162,8 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     border: 3px solid var(--orange);
     border-radius: 0;
-    color: var(--orange);
     font-size: 2.5rem;
+    color: var(--orange);
 }
 #contact h2 {
     font-size: 5rem;
@@ -177,20 +182,19 @@ h1, h2, h3, h4, h5, h6 {
 ::placeholder {
     color: var(--moka);
 }
-#contact input:focus {
-    outline: none;
-}
-
-/* team */
-#team .row {
-    clip-path: polygon(30% 0%, 70% 0%, 100% 5%, 100% 95%, 70% 100%, 30% 100%, 0 95%, 0 5%);
+/***************
+team
+***************/
+#team .col-md-8 {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 5%, 100% 95%, 70% 100%, 30% 100%, 0 94%, 0 5%);
 }
 #team .carousel-caption {
     color: var(--orange);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0,0,0,.5);
 }
-
-/* about */
+/***************
+about
+***************/
 #about {
     background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/about-bg.jpg);
     background-position: center;
@@ -216,13 +220,14 @@ h1, h2, h3, h4, h5, h6 {
 #about .card {
     border: 1px solid var(--black);
 }
-
-/* projects */
+/***************
+projects
+***************/
 #projects .col-lg-3 {
     padding: 0;
 }
 #projects .imgContainer {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
     position: relative;
     overflow: hidden;
 }
@@ -235,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -10rem;
     padding: 30px 0;
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
     transition: bottom 1.5s;
 }
 #projects .imgContainer:hover .imgIcons {
@@ -250,8 +255,9 @@ h1, h2, h3, h4, h5, h6 {
 #projects i:hover {
     color: var(--black);
 }
-
-/* people */
+/***************
+people
+***************/
 #people img {
     width: 80%;
     margin: -100px auto 0 auto;
@@ -271,10 +277,11 @@ h1, h2, h3, h4, h5, h6 {
 #people i:hover {
     color: var(--gray);
 }
-
-/* skills */
+/***************
+skills
+***************/
 #skills {
-    background-image: linear-gradient(rgb(255, 138, 91, .8), rgb(255, 138, 91, .8)), url(img/progress.jpg);
+    background-image: linear-gradient(rgba(255, 138, 91,.8), rgba(255, 138, 91,.8)), url(img/progress.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -287,23 +294,24 @@ h1, h2, h3, h4, h5, h6 {
 #skills .progress-bar {
     background: var(--black);
 }
-#skills .single-progress {
+.single-progress {
     margin-bottom: 15px;
 }
-
-/* pricing */
+/***************
+pricing
+***************/
 #pricing .card {
     border-radius: 0;
 }
 #pricing .card-title {
     padding-top: 20px;
 }
-#pricing .priceNum {
+.priceNum {
     position: relative;
     background: var(--moka);
     padding: 10px 0;
 }
-#pricing .money {
+.money {
     position: absolute;
     top: 30%;
     left: 20%;
@@ -318,14 +326,13 @@ h1, h2, h3, h4, h5, h6 {
 #pricing .list-group-item {
     font-size: 12px;
 }
-#pricing .pricingBtn {
+.pricingBtn {
     background: var(--orange);
     border-radius: 0;
-    transition: var(--transition);
 }
-#pricing .pricingBtn:hover {
-    color: var(--white);
+.pricingBtn:hover {
     background: var(--black);
+    color: var(--white);
 }
 #pricing .col-lg-3:last-child .priceNum {
     background: var(--orange);
@@ -341,4 +348,14 @@ h1, h2, h3, h4, h5, h6 {
 #pricing .list-group-item:last-child {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+/***************
+footer
+***************/
+footer {
+    background: var(--black);
+    color: var(--white);
+}
+footer h2, footer i {
+    color: var(--orange);
 }

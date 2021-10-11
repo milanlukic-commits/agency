@@ -351,3 +351,39 @@ footer {
 footer h2, footer i {
     color: var(--orange);
 }
+
+/* responsive */
+@media (max-width: 767px) {
+    .display-1 {
+        font-size: 5rem;
+    }
+    .d-flex {
+        flex-wrap: wrap;
+    }
+    #bannerIcons ul li {
+        margin: 10px;
+    }
+    #contact h2 {
+        font-size: 3rem;
+    }
+    #contact input {
+        width: 40%;
+        font-size: 2rem;
+        top: 6px;
+    }
+    #contact .formBtn {
+        font-size: 1.5rem;
+    }
+    .accordion {
+        margin-bottom: 50px;
+    }
+    .peopleCard {
+        margin-bottom: 140px;
+    }
+    .pricingCard {
+        margin-bottom: 50px;
+    }
+    .py-5 {
+        padding: 50px 0 !important;
+    }
+}
